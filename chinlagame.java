@@ -6,7 +6,48 @@ public class chinlagame {
         System.out.println("who is playing sir/ mam / friend or student");
         String choose;
         choose = sc.nextLine();
-        if (choose.equals("sir") || choose.equals("mam"))
+        if(choose.equals("friend"))
+        {
+        String answer;
+        System.out.println("aur bade bhai kaise ho game start kare? (jaroor/nai)");
+        answer = sc.nextLine();
+
+        if (answer.equals("jaroor")) {
+            int numberOfTries = 0;
+            int maxtry = 10;
+            int randvalue = rand.nextInt(100);
+            System.out.println("toh chaliye shuru karte hai:- ");
+            
+            while (numberOfTries < maxtry) 
+            {
+                int guess = sc.nextInt();
+                numberOfTries++;
+                if (guess == randvalue && guess == 1) {
+                    System.out.println("are bade bhai tumne to moj kardi! sirf " + numberOfTries + " guess me hi jeet gai");
+                    break;
+                } else if (guess == randvalue && guess >= 5) {
+                    System.out.println("sabash bemte tumne apne baap ka naam roshan kardiya " + numberOfTries + " guess me hi jeet gai");
+                    break;
+                } else if (guess < randvalue) {
+                    System.out.println("choti soch wale no to bada soch le");
+                } else if (guess > randvalue) {
+                    System.out.println("aukat me aa bhadwe");
+                }
+            }
+            if (numberOfTries >= maxtry) {
+                System.out.println("chala ja bsdk baap ko bhej tere se nai hoga " + randvalue);
+            }
+        } 
+        else if (answer.equals("nai"))
+        {
+            System.out.println("toh yha apni maa chudane aaya hai bsdk??");
+        }
+        else {
+            System.out.println("aakh ke andhe wo option tere baap ne diya hai ya teri maa ne ");
+        }
+        sc.close();
+        }
+        else 
         {
         String answer;
         System.out.println("Hello " +choose+ " how are you? would you like to start the game (yes/no)");
@@ -43,46 +84,6 @@ public class chinlagame {
         }
         else {
             System.out.println("choose the correct option:- ");
-        }
-        sc.close();
-        }
-        else
-        {
-        String answer;
-        System.out.println("aur bade bhai kaise ho game start kare? (jaroor/nai)");
-        answer = sc.nextLine();
-
-        if (answer.equals("jaroor")) {
-            int numberOfTries = 0;
-            int maxtry = 10;
-            int randvalue = rand.nextInt(100);
-            System.out.println("toh chaliye shuru karte hai:- " + randvalue);
-            
-            while (numberOfTries < maxtry) {
-                int guess = sc.nextInt();
-                numberOfTries++;
-                if (guess == randvalue && guess == 1) {
-                    System.out.println("are bade bhai tumne to moj kardi! sirf " + numberOfTries + " guess me hi jeet gai");
-                    break;
-                } else if (guess == randvalue && guess >= 5) {
-                    System.out.println("sabash bemte tumne apne baap ka naam roshan kardiya " + guess + " guess me hi jeet gai");
-                    break;
-                } else if (guess < randvalue) {
-                    System.out.println("choti soch wale no to bada soch le");
-                } else if (guess > randvalue) {
-                    System.out.println("aukat me aa bhadwe");
-                }
-            }
-            if (numberOfTries >= maxtry) {
-                System.out.println("chala ja bsdk kal aana fir " + randvalue);
-            }
-        } 
-        else if (answer.equals("nai"))
-        {
-            System.out.println("toh yha apni maa chudane aaya hai bsdk??");
-        }
-        else {
-            System.out.println("aakh ke andhe wo option tere baap ne diya hai ya teri maa ne ");
         }
         sc.close();
         }
