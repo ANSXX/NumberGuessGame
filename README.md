@@ -1,20 +1,20 @@
-# chinlagame
-# Chinlagame Readme
+# NumberGuessGame
+# NumberGuessGame Readme
 
-This is a simple Java console-based number guessing game called "Chinlagame." The game allows you to guess a random number between 1 and 100. Depending on your input, the game offers different experiences for "sir" (or "mam") and "friend" (or "student"). 
+This is a simple Java console-based number guessing game called "NumberGuessGame." The game allows you to guess a random number between 1 and 100. Depending on your input, the game offers different experiences for "player" and "friend."
 
 ## How to Play
 
-1. **Run the Program**: To play Chinlagame, compile and run the provided Java code.
+1. **Run the Program**: To play NumberGuessGame, compile and run the provided Java code.
 
    ```shell
-   javac chinlagame.java
-   java chinlagame
+   javac NumberGuessGame.java
+   java NumberGuessGame
    ```
 
-2. **Select Player Type**: The game will prompt you to choose who is playing - "sir" (or "mam") or "friend" (or "student"). 
+2. **Select Player Type**: The game will prompt you to choose who is playing - "player" or "friend."
 
-3. **Start the Game**: If you choose "sir" (or "mam") and confirm that you want to start the game, the game will generate a random number between 1 and 100. You will have up to 10 tries to guess this number.
+3. **Start the Game**: If you choose "player" and confirm that you want to start the game, the game will generate a random number between 1 and 100. You will have up to 10 tries to guess this number.
 
 4. **Guess the Number**: You can enter your guess, and the game will provide feedback on whether your guess is too high or too low.
 
@@ -24,8 +24,8 @@ This is a simple Java console-based number guessing game called "Chinlagame." Th
 
 ## Player Types
 
-- If you select "sir" or "mam" as the player type, the game will use polite language and address you formally.
-- If you select "friend" or "student" as the player type, the game will use informal language and address you as such.
+- If you select "player" as the player type, the game will address you formally.
+- If you select "friend" as the player type, the game will address you informally.
 
 ## Important Notes
 
@@ -33,4 +33,4 @@ This is a simple Java console-based number guessing game called "Chinlagame." Th
 - This game is for entertainment purposes and does not require any external libraries or dependencies.
 - Respectful language is encouraged when playing the game, and the use of inappropriate language is discouraged.
 
-Enjoy playing Chinlagame! Have fun guessing the number!
+Enjoy playing NumberGuessGame! Have fun guessing the number!
